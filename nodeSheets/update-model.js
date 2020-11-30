@@ -4,6 +4,7 @@ const updateSchema = new mongoose.Schema({
     date:{type:Date, required:true},
     tests:{type:Number, required:true},
     positives:{type:Number, required:true},
+    recovered:{type:Number, required:true},
     percentage:{type:String, required:true},
     deaths:{type:Number, required:true},
     totalCases:{type:Number, required:true},
