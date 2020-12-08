@@ -1,0 +1,14 @@
+[Unit]
+Description=Node/Express Server
+
+[Service]
+ExecStart=/home/lucas/covidV2/nodeSheets/server.js
+Restart=always
+User=nobody
+Group=nogroup
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/home/lucas/covidV2/nodeSheets/
+
+[Install]
+WantedBy=multi-user.target
